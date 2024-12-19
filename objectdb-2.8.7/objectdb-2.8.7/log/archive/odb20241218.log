@@ -1,0 +1,72 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2024-12-18 23:10:18 #1 store.file] 
+readTextFile error.
+
+[2024-12-18 23:10:18 #2 store.file] 
+java.io.FileNotFoundException: C:\Users\shosh\.objectdb\exolorer.xml (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at com.objectdb.o.STH.B(STH.java:731)
+	at com.objectdb.o.STH.A(STH.java:715)
+	at com.objectdb.o.CNF.<init>(CNF.java:106)
+	at com.objectdb.o.CNF.<clinit>(CNF.java:32)
+	at com.objectdb.o.MainFrame.init(MainFrame.java:132)
+	at com.objectdb.o.EXA.<init>(EXA.java:77)
+	at com.objectdb.Explorer$1.run(Explorer.java:57)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+[2024-12-19 00:40:39 #3 explorer] 
+[ObjectDB 2.8.7] javax.persistence.PersistenceException
+Failed to create a new file '"C:\Users\shosh\Desktop\database_projectfinal\src\library"' (error 112)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: com.objectdb.o.UserException: Failed to create a new file '"C:\Users\shosh\Desktop\database_projectfinal\src\library"'
+	at com.objectdb.o.MSG.a(MSG.java:77)
+	at com.objectdb.o.LFL.m(LFL.java:887)
+	at com.objectdb.o.LFL.x(LFL.java:827)
+	at com.objectdb.o.DFL.<init>(DFL.java:241)
+	at com.objectdb.o.DMG.<init>(DMG.java:27)
+	at com.objectdb.o.MST.<init>(MST.java:127)
+	at com.objectdb.o.MST.ap(MST.java:109)
+	at com.objectdb.o.MSF.YQ(MSF.java:190)
+	at com.objectdb.o.OMF.s(OMF.java:805)
+	at com.objectdb.jpa.EMF.s(EMF.java:130)
+	at com.objectdb.o.OMF.x(OMF.java:716)
+	at com.objectdb.jpa.EMF.createEntityManager(EMF.java:149)
+	... 17 more
+Caused by: java.io.FileNotFoundException: "C:\Users\shosh\Desktop\database_projectfinal\src\library" (The filename, directory name, or volume label syntax is incorrect)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:366)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:285)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:231)
+	at com.objectdb.o.LFL.m(LFL.java:874)
+	... 27 more
+
